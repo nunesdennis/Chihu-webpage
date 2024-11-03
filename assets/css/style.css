@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #007AFF;
+}
+
+::selection {
+  color: #fff;
+  background: #007AFF;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+
+/* HEADER ========== */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 549px) {
+  header { flex-direction: column; }
+  header .header-icon { margin-bottom: 1rem; }
+}
+
+header.sub-page {
+  padding: 40px 20px;
+  padding-top: 40px;
+  margin-top: 0;
+  background: #f9f9f9;
+}
+
+header .header-icon {
+  display: block;
+}
+
+header .header-icon {
+  width: 100px;
+  height: 100px;
+}
+header .header-icon img {
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  header .header-icon {
+    width: 200px;
+    height: 200px;
+  }
+  header .header-icon img {
+    width: 100%;
+  }
+}
+
+header .header-info {
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  header .header-info {
+    padding-left: 50px;
+  }
+}
+
+header .header-info p {
+  font-size: 1.125rem;
+}
+
+
+/* MAIN ========== */
+.intro-text {
+  margin: 40px auto;
+}
+
+.intro-text .signature {
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .intro-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro-text {
+    max-width: 600px;
+  }
+}
+
+.main > * { max-width: 600px; margin: 100px auto; }
+
+.main__link { display: block; color: #000; text-decoration: none; padding: 0 20px; }
+.main__link--image img { max-width: 100%; margin-bottom: 1rem; }
+.main__link--content { margin-top: 0.7rem; }
+.main__link--content p { max-width: 60%; text-align: center; margin: auto; color: #6f6f6f; }
+
+.main__video { margin: 100px auto; padding: 0 20px; }
+
+.video-preview {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0; 
+}
+.video-preview iframe {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+
+.reviews { margin: 50px auto; text-align: center; max-width: 700px; padding: 0 20px; }
+.reviews p { color: #8b8b8b; margin-bottom: 0; font-size: 1rem;  }
+.reviews a { color: #6f6f6f; text-decoration: none; }
+
+
+
+/* FOOTER ========== */
+footer {
+  margin: 100px 0 50px;
+  text-align: center;
+  clear: both;
+}
+
+footer a {
+  color: #A9A9A9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 549px) {
+  footer a {
+    display: block;
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 549px) {
+  footer a:not(:last-child) {
+    margin-right: 6%;
+  }
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.night-mode {
+  background: #21252E;
+}
+
+.night-mode h1, .night-mode p {
+  color: white;
+}
+
+.night-mode h2 {
+  color: #5379FF;
+}
+
+.night-mode .header-info p {
+  opacity: 0.7;
+}
+
+.night-mode h3 {
+  color: #7F7F82;
+}
